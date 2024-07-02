@@ -2,6 +2,6 @@
 <h1>Venues ..</h1>
 <br><br>
 {% for venue in venue_list%}
-    <a href="{%url 'show-venue' venue.id%}">{{venue}}</a> <br>
+    <a href="{%url 'show-venue' venue.id%}">{{venue}}</a><a href="{%url 'update-venue' venue.id%}" > -update</a> <br>
 {% endfor%}
 {% endblock content %}
