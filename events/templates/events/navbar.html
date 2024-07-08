@@ -21,6 +21,10 @@
         <li class="nav-item">
           <a class="nav-link" href="{%url 'list-venues' %}"> Venue</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'login' %}">Login</a>
+        </li>
       </ul>
       <form class="d-flex" role="search" method=POST action="{%url 'search-venues'%}">
         {%csrf_token%}

@@ -20,6 +20,9 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('events.urls')),
+    # path('members/',include('django.contrib.urls')),
+    path('members/',include('members.urls')),
+   
 ]
 admin.site.site_header ="My club website"
 admin.site.site_title ="welcome to admin page "
